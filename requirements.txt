@@ -1,0 +1,10 @@
+bert-score
+numpy
+openpyxl
+pandas
+rouge-score
+scikit-learn
+scipy
+sentence-transformers
+torch
+transformers

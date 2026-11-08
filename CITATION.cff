@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite this software and artifact package."
+type: software
+title: "LLM-Generated Reference Answers for Similarity-Based Automated Essay Scoring"
+version: 1.0.0
+date-released: 2026-11-08
+authors:
+  - family-names: ElMassry
+    given-names: Ahmed M.
+  - family-names: Zaki
+    given-names: Nazar
+  - family-names: Sharaf
+    given-names: Mohamed
+  - family-names: Mediani
+    given-names: Mohammed
+keywords:
+  - automated essay scoring
+  - large language models
+  - generated reference answers
+  - semantic similarity
+  - SBERT
+  - BERTScore
+license: MIT
+repository-code: "https://github.com/ahmdmasry-uaeu/llm_reference_aes"

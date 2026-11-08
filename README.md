@@ -12,8 +12,9 @@ similarity-based automated essay scoring (AES).
   task-specific substitutions were used for GPT and Gemini.
 - `docs/Appendix_Prompt_and_Reference_Samples.docx`: reader-friendly Claude
   prompt examples and selected GPT reference-answer samples.
-- `artifacts/generated_references/`: final stored reference answers from GPT,
-  Gemini, and Claude. Dataset prompts/source passages have been removed.
+- `artifacts/generated_references/all_generated_references.csv`: one combined
+  file containing all 585 final reference answers from GPT, Gemini, and Claude.
+  Dataset prompts/source passages have been removed.
 - `artifacts/numeric_features/`: numerical features with student-response text
   removed.
 - `results/`: primary fold-safe outputs, paper-table data, revision audits, and
