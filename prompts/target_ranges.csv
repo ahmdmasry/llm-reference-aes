@@ -1,0 +1,14 @@
+task,task_type,short_words,medium_words,long_words
+ASAP1,opinion-based,100-200,325-425,550-650
+ASAP2,opinion-based,100-200,325-425,850-950
+ASAP3,source-based,50-150,150-250,250-350
+ASAP4,source-based,50-150,150-250,250-350
+ASAP5,source-based,50-150,150-250,250-350
+ASAP6,source-based,50-150,200-300,350-450
+ASAP7,story-based,50-150,200-300,450-550
+ASAP8,story-based,50-150,450-550,750-850
+OS1,factual,25-75,75-100,100-125
+OS2,factual,25-75,75-100,100-125
+OS3,factual,25-75,75-100,100-125
+OS4,factual,25-75,75-100,100-125
+OS5,factual,25-75,75-100,100-125
