@@ -1,0 +1,56 @@
+   Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+  Building wheel for rouge-score (pyproject.toml) ... done
+Mounted at <DRIVE_MOUNT>
+Device: cuda
+Loaded 585 references; missing files: 0
+Loaded student files: {'ASAP1': 1783, 'ASAP2': 1800, 'ASAP3': 1726, 'ASAP4': 1771, 'ASAP5': 1805, 'ASAP6': 1800, 'ASAP7': 1569, 'ASAP8': 723, 'OS1': 291, 'OS2': 372, 'OS3': 312, 'OS4': 314, 'OS5': 267}
+comparison
+cross_generator    2925
+student_top        2600
+within_set         1170
+dtype: int64
+modules.json: 100% 349/349 [00:00<00:00, 33.0kB/s]config_sentence_transformers.json: 100% 116/116 [00:00<00:00, 11.7kB/s]README.md: 100% 11.6k/11.6k [00:00<00:00, 979kB/s]sentence_bert_config.json: 100% 53.0/53.0 [00:00<00:00, 5.32kB/s]config.json: 100% 571/571 [00:00<00:00, 67.4kB/s]model.safetensors: reconstructing file: 100%  438MB /  438MB, 40.5MB/s  model.safetensors: downloading bytes:   414MB, 37.6MB/s  Loading weights: 100% 199/199 [00:00<00:00, 4007.08it/s]tokenizer_config.json: 100% 363/363 [00:00<00:00, 30.7kB/s]vocab.txt: 100% 232k/232k [00:00<00:00, 9.19MB/s]tokenizer.json: 100% 466k/466k [00:00<00:00, 13.5MB/s]special_tokens_map.json: 100% 239/239 [00:00<00:00, 23.2kB/s]config.json: 100% 190/190 [00:00<00:00, 19.7kB/s]Batches: 100% 84/84 [00:45<00:00,  8.28it/s]config.json: 100% 482/482 [00:00<00:00, 49.9kB/s]tokenizer_config.json: 100% 25.0/25.0 [00:00<00:00, 2.96kB/s]vocab.json: 100% 899k/899k [00:00<00:00, 4.85MB/s]merges.txt: 100% 456k/456k [00:00<00:00, 5.73MB/s]tokenizer.json: 100% 1.36M/1.36M [00:00<00:00, 8.26MB/s]model.safetensors: reconstructing file: 100% 1.42GB / 1.42GB,  103MB/s  model.safetensors: downloading bytes:   952MB, 66.5MB/s  Loading weights: 100% 389/389 [00:00<00:00, 4807.44it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+                                          sbert_cos_mean  bertscore_f1_rescaled_mean  bertscore_f1_raw_mean  rougeL_f1_mean  trigram_jaccard_mean
+comparison      dataset condition gen                                                                                                            
+cross_generator ASAP    long      all             0.7850                      0.0838                 0.8454          0.1742                0.0135
+                        medium    all             0.7816                      0.1225                 0.8519          0.1790                0.0125
+                        short     all             0.7747                      0.1889                 0.8631          0.1879                0.0136
+                OS      long      all             0.8035                      0.1643                 0.8590          0.1820                0.0062
+                        medium    all             0.8023                      0.2238                 0.8690          0.1906                0.0075
+                        short     all             0.8000                      0.2999                 0.8818          0.2240                0.0129
+student_top     ASAP    all       all             0.6405                      0.0009                 0.8314          0.1803                0.0134
+                OS      all       all             0.8009                      0.2516                 0.8737          0.3332                0.1330
+within_set      ASAP    long      Claude          0.7887                      0.1941                 0.8640          0.2531                0.0558
+                                  GPT             0.8781                      0.2972                 0.8814          0.2654                0.0530
+                                  Gemini          0.7802                      0.1544                 0.8573          0.2169                0.0209
+                        medium    Claude          0.8042                      0.2409                 0.8719          0.2663                0.0586
+                                  GPT             0.8535                      0.3468                 0.8898          0.2934                0.0575
+                                  Gemini          0.7784                      0.1825                 0.8620          0.2075                0.0154
+                        short     Claude          0.8245                      0.3387                 0.8884          0.3015                0.0778
+                                  GPT             0.8681                      0.4135                 0.9010          0.3240                0.0674
+                                  Gemini          0.7357                      0.2148                 0.8675          0.1951                0.0092
+                OS      long      Claude          0.8068                      0.1485                 0.8563          0.1807                0.0047
+                                  GPT             0.9435                      0.5225                 0.9194          0.4469                0.1269
+                                  Gemini          0.7640                      0.1633                 0.8588          0.1899                0.0067
+                        medium    Claude          0.8094                      0.1971                 0.8645          0.1865                0.0035
+                                  GPT             0.9392                      0.5733                 0.9280          0.4644                0.1446
+                                  Gemini          0.7298                      0.1983                 0.8647          0.1832                0.0054
+                        short     Claude          0.7919                      0.2736                 0.8774          0.1998                0.0052
+                                  GPT             0.9518                      0.5924                 0.9312          0.5011                0.1551
+                                  Gemini          0.7513                      0.2542                 0.8741          0.1967                0.0065
+Saved to <WORKSPACE_ROOT>/_revision_audits/reference_diversity

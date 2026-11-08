@@ -1,0 +1,5 @@
+﻿task,n_responses,source_file,words_mean,words_sd,words_min,words_max,sbert_tokens_mean,sbert_tokens_sd,sbert_tokens_min,sbert_tokens_max,sbert_limit,sbert_n_exceed,sbert_pct_exceed,roberta_tokens_mean,roberta_tokens_sd,roberta_tokens_min,roberta_tokens_max,roberta_limit,roberta_n_exceed,roberta_pct_exceed
+ASAP1,1783,ASAP_task1.csv,365.66,119.59,8,785,441.69,146.72,12,998,384,1165,65.34,445.21,150.24,12,1019,512,543,30.45
+ASAP2,1800,ASAP_task2.csv,380.72,156.16,31,1063,446.62,181.14,36,1211,384,1099,61.06,468.17,189.05,35,1303,512,656,36.44
+ASAP7,1569,ASAP_task7.csv,168.19,85.25,5,592,204.94,106.3,8,776,384,109,6.95,218.23,120.47,8,889,512,44,2.8
+ASAP8,723,ASAP_task8.csv,604.7,201.92,4,856,712.98,242.83,7,1177,384,636,87.97,736.53,255.18,6,1314,512,571,78.98

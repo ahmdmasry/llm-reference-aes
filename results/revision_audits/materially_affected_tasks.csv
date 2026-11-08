@@ -1,0 +1,9 @@
+﻿task,student_responses_materially_affected,reference_conditions_materially_affected
+ASAP1,True,6
+ASAP2,True,6
+ASAP3,False,2
+ASAP4,False,2
+ASAP5,False,2
+ASAP6,False,3
+ASAP7,True,4
+ASAP8,True,6

@@ -1,0 +1,27 @@
+case_id,dataset,task,task_description,sampling_stratum,response_id,human_score,predicted_score,Difference,word_count,sbert_tokens,roberta_tokens,primary_code,secondary_code
+C01,ASAP,ASAP1,Computer's effect on people's lives,Extreme: overprediction,1392,5,9.0,4.0,376,448,457,Keyword-driven overprediction,Non-semantic writing quality
+C02,ASAP,ASAP1,Computer's effect on people's lives,Extreme: underprediction,919,11,7.0,4.0,397,463,467,Possible human-scoring anomaly,Non-semantic writing quality
+C04,ASAP,ASAP2,Censorship in libraries,Extreme: overprediction,1558,4,7.0,3.0,329,385,400,Keyword-driven overprediction,Non-semantic writing quality
+C05,ASAP,ASAP2,Censorship in libraries,Extreme: underprediction,681,9,6.0,3.0,614,735,756,Non-semantic writing quality,Creative or uncommon response
+C07,ASAP,ASAP3,Factors affecting the cyclist,Extreme: overprediction,222,0,2.0,2.0,176,216,251,Keyword-driven overprediction,Copied or verbatim source text
+C08,ASAP,ASAP3,Factors affecting the cyclist,Extreme: underprediction,354,3,1.0,2.0,21,27,28,Concise or list-format response,Possible human-scoring anomaly
+C10,ASAP,ASAP4,Purpose of the concluding paragraph,Extreme: overprediction,1218,0,2.33,2.33,180,232,239,Possible human-scoring anomaly,
+C11,ASAP,ASAP4,Purpose of the concluding paragraph,Extreme: underprediction,1005,3,0.0,3.0,5,8,9,Possible human-scoring anomaly,"Very short, off-topic or non-English response"
+C13,ASAP,ASAP5,Mood created in the memoir,Extreme: overprediction,762,1,3.0,2.0,198,247,243,Partial or contradictory response,Keyword-driven overprediction
+C14,ASAP,ASAP5,Mood created in the memoir,Extreme: underprediction,173,3,1.0,2.0,51,63,63,Concise or list-format response,
+C16,ASAP,ASAP6,Obstacles the builders faced,Extreme: overprediction,152,0,2.0,2.0,176,205,200,Partial or contradictory response,Keyword-driven overprediction
+C17,ASAP,ASAP6,Obstacles the builders faced,Extreme: underprediction,1450,3,1.0,2.0,88,116,117,Concise or list-format response,Alternative valid expression
+C19,ASAP,ASAP7,A story about patience,Extreme: overprediction,321,9,19.0,10.0,318,354,355,Keyword-driven overprediction,Non-semantic writing quality
+C20,ASAP,ASAP7,A story about patience,Extreme: underprediction,1486,19,8.0,11.0,23,28,28,Possible human-scoring anomaly,"Very short, off-topic or non-English response"
+C22,ASAP,ASAP8,A story involving laughter,Extreme: overprediction,203,20,32.0,12.0,479,507,512,Partial or contradictory response,Non-semantic writing quality
+C23,ASAP,ASAP8,A story involving laughter,Extreme: underprediction,88,60,35.0,25.0,658,895,942,Creative or uncommon response,Encoder truncation
+C25,OS,OS1,What is an operating system?,Extreme: overprediction,164,1,3.0,2.0,29,36,36,Copied or verbatim source text,
+C26,OS,OS1,What is an operating system?,Extreme: underprediction,2,5,3.0,2.0,54,66,64,Alternative valid expression,
+C28,OS,OS2,Advantages of a multiprocessor system,Extreme: overprediction,267,0,3.0,3.0,40,57,51,Keyword-driven overprediction,"Very short, off-topic or non-English response"
+C29,OS,OS2,Advantages of a multiprocessor system,Extreme: underprediction,174,5,2.0,3.0,19,38,44,Concise or list-format response,Possible human-scoring anomaly
+C31,OS,OS3,Main purpose of an operating system,Extreme: overprediction,181,0,2.5,2.5,308,389,421,"Very short, off-topic or non-English response",Copied or verbatim source text
+C32,OS,OS3,Main purpose of an operating system,Extreme: underprediction,297,5,2.0,3.0,51,63,73,Concise or list-format response,
+C34,OS,OS4,How an operating system handles multiple tasks,Extreme: overprediction,65,0,3.0,3.0,272,332,356,Copied or verbatim source text,Keyword-driven overprediction
+C35,OS,OS4,How an operating system handles multiple tasks,Extreme: underprediction,222,3,2.0,1.0,59,72,73,Concise or list-format response,
+C37,OS,OS5,Single-processor versus multiprocessor systems,Extreme: overprediction,175,0,2.0,2.0,77,101,107,Possible human-scoring anomaly,
+C38,OS,OS5,Single-processor versus multiprocessor systems,Extreme: underprediction,261,3,1.0,2.0,18,34,51,Concise or list-format response,Partial or contradictory response

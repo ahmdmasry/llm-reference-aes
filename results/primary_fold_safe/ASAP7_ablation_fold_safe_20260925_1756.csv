@@ -1,0 +1,4 @@
+task,test,condition,pair,mean_diff,ci_lo,ci_hi,seeds_significant,run_timestamp
+ASAP7,feature_ablation,GPT-long,bertscore-cosine,0.6574,0.5849,0.7249,5/5,20260925_1756
+ASAP7,feature_ablation,GPT-long,combined-bertscore,0.0358,0.0139,0.0577,5/5,20260925_1756
+ASAP7,feature_ablation,GPT-long,combined-cosine,0.6928,0.6356,0.748,5/5,20260925_1756

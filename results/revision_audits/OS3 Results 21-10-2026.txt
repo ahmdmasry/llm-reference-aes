@@ -1,0 +1,207 @@
+ OS3: 312 essays, score 0-5
+refs[GPT/short]: mean words 54  (Model_Answers_Short_College_freshman_20251202_1436.csv)
+refs[GPT/medium]: mean words 73  (Model_Answers_Medium_College_freshman_20251202_1436.csv)
+refs[GPT/long]: mean words 125  (Model_Answers_Long_College_freshman_20251202_1436.csv)
+refs[Claude/short]: mean words 50  (Claude_OS3_short_8Dec.csv)
+refs[Claude/medium]: mean words 104  (Claude_OS3_med_8Dec.csv)
+refs[Claude/long]: mean words 147  (Claude_OS3_long_8Dec.csv)
+refs[Gemini/short]: mean words 50  (QS3_short_ref_answer_7Dec.csv)
+refs[Gemini/medium]: mean words 78  (QS3_med_ref_answer_7Dec.csv)
+refs[Gemini/long]: mean words 103  (QS3_long_ref_answer_7Dec.csv)
+device: cuda
+modules.json: 100% 349/349 [00:00<00:00, 25.7kB/s]config_sentence_transformers.json: 100% 116/116 [00:00<00:00, 9.31kB/s]README.md: 100% 11.6k/11.6k [00:00<00:00, 864kB/s]sentence_bert_config.json: 100% 53.0/53.0 [00:00<00:00, 6.00kB/s]config.json: 100% 571/571 [00:00<00:00, 62.9kB/s]model.safetensors: reconstructing file: 100%  438MB /  438MB, 35.3MB/s  model.safetensors: downloading bytes:   414MB, 37.1MB/s  Loading weights: 100% 199/199 [00:00<00:00, 3863.32it/s]tokenizer_config.json: 100% 363/363 [00:00<00:00, 32.6kB/s]vocab.txt: 100% 232k/232k [00:00<00:00, 10.8MB/s]tokenizer.json: 100% 466k/466k [00:00<00:00, 26.7MB/s]special_tokens_map.json: 100% 239/239 [00:00<00:00, 23.6kB/s]config.json: 100% 190/190 [00:00<00:00, 20.1kB/s]Batches: 100% 5/5 [00:02<00:00,  3.35it/s]essay embeddings: 3s (reused for all generators)
+config.json: 100% 482/482 [00:00<00:00, 41.7kB/s]tokenizer_config.json: 100% 25.0/25.0 [00:00<00:00, 2.19kB/s]vocab.json: 100% 899k/899k [00:00<00:00, 6.06MB/s]merges.txt: 100% 456k/456k [00:00<00:00, 3.00MB/s]tokenizer.json: 100% 1.36M/1.36M [00:00<00:00, 7.49MB/s]model.safetensors: reconstructing file: 100% 1.42GB / 1.42GB, 91.0MB/s  model.safetensors: downloading bytes:   952MB, 72.3MB/s  Loading weights: 100% 389/389 [00:00<00:00, 4391.13it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+saved GPT/short: <WORKSPACE_ROOT>/OS3/GPT/features_full_short_OS3_GPT.csv  (21s)
+Loading weights: 100% 389/389 [00:00<00:00, 4179.26it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+saved GPT/medium: <WORKSPACE_ROOT>/OS3/GPT/features_full_medium_OS3_GPT.csv  (7s)
+Loading weights: 100% 389/389 [00:00<00:00, 4817.38it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+saved GPT/long: <WORKSPACE_ROOT>/OS3/GPT/features_full_long_OS3_GPT.csv  (7s)
+Loading weights: 100% 389/389 [00:00<00:00, 4130.99it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+saved Gemini/short: <WORKSPACE_ROOT>/OS3/Gemini/features_full_short_OS3_Gemini.csv  (7s)
+Loading weights: 100% 389/389 [00:00<00:00, 3860.35it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+saved Gemini/medium: <WORKSPACE_ROOT>/OS3/Gemini/features_full_medium_OS3_Gemini.csv  (7s)
+Loading weights: 100% 389/389 [00:00<00:00, 3983.44it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+saved Gemini/long: <WORKSPACE_ROOT>/OS3/Gemini/features_full_long_OS3_Gemini.csv  (8s)
+Loading weights: 100% 389/389 [00:00<00:00, 4122.29it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+saved Claude/short: <WORKSPACE_ROOT>/OS3/Claude/features_full_short_OS3_Claude.csv  (8s)
+Loading weights: 100% 389/389 [00:00<00:00, 4091.89it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+saved Claude/medium: <WORKSPACE_ROOT>/OS3/Claude/features_full_medium_OS3_Claude.csv  (8s)
+Loading weights: 100% 389/389 [00:00<00:00, 3926.61it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+saved Claude/long: <WORKSPACE_ROOT>/OS3/Claude/features_full_long_OS3_Claude.csv  (10s)
+
+DONE: 9 distinct feature files for OS3, all on Drive.
+--------------------------------------------------------------------------
+
+
+========== STAGE 2: multi-seed analysis for OS3 ==========
+
+--- QWK mean/sd/95%CI (combined features) ---
+task generator length feature_set   mean     sd  ci_lo  ci_hi run_timestamp
+ OS3    Claude   long    combined 0.5739 0.0919 0.4933 0.6544 20261021_1624
+ OS3    Claude medium    combined 0.5736 0.0758 0.5072 0.6400 20261021_1624
+ OS3    Claude  short    combined 0.5773 0.0821 0.5053 0.6492 20261021_1624
+ OS3       GPT   long    combined 0.5898 0.0826 0.5173 0.6622 20261021_1624
+ OS3       GPT medium    combined 0.6400 0.0509 0.5953 0.6846 20261021_1624
+ OS3       GPT  short    combined 0.6405 0.0559 0.5914 0.6895 20261021_1624
+ OS3    Gemini   long    combined 0.5458 0.0792 0.4763 0.6152 20261021_1624
+ OS3    Gemini medium    combined 0.5319 0.0723 0.4685 0.5952 20261021_1624
+ OS3    Gemini  short    combined 0.5525 0.0906 0.4731 0.6319 20261021_1624
+
+--- Significance tests (paired bootstrap) ---
+task      test condition          pair  mean_diff   ci_lo  ci_hi seeds_significant run_timestamp
+ OS3    length       GPT  medium-short    -0.0001 -0.0398 0.0391               0/5 20261021_1624
+ OS3    length       GPT    long-short    -0.0520 -0.1495 0.0354               1/5 20261021_1624
+ OS3    length       GPT   long-medium    -0.0503 -0.1549 0.0437               1/5 20261021_1624
+ OS3    length    Claude  medium-short    -0.0041 -0.0788 0.0741               0/5 20261021_1624
+ OS3    length    Claude    long-short    -0.0029 -0.0936 0.0853               0/5 20261021_1624
+ OS3    length    Claude   long-medium     0.0005 -0.0549 0.0577               0/5 20261021_1624
+ OS3    length    Gemini  medium-short    -0.0218 -0.0846 0.0341               1/5 20261021_1624
+ OS3    length    Gemini    long-short    -0.0076 -0.0624 0.0436               1/5 20261021_1624
+ OS3    length    Gemini   long-medium     0.0156 -0.0626 0.0962               0/5 20261021_1624
+ OS3 generator     short    GPT-Claude     0.0648  0.0009 0.1455               2/5 20261021_1624
+ OS3 generator     short    GPT-Gemini     0.0879  0.0033 0.1944               2/5 20261021_1624
+ OS3 generator     short Claude-Gemini     0.0233 -0.0487 0.1079               0/5 20261021_1624
+ OS3 generator    medium    GPT-Claude     0.0674 -0.0097 0.1599               3/5 20261021_1624
+ OS3 generator    medium    GPT-Gemini     0.1087  0.0152 0.2217               3/5 20261021_1624
+ OS3 generator    medium Claude-Gemini     0.0423 -0.0213 0.1282               1/5 20261021_1624
+ OS3 generator      long    GPT-Claude     0.0150 -0.0673 0.1058               0/5 20261021_1624
+ OS3 generator      long    GPT-Gemini     0.0433 -0.0552 0.1499               0/5 20261021_1624
+ OS3 generator      long Claude-Gemini     0.0282 -0.0402 0.1121               1/5 20261021_1624
+----------------------------------------------------------------------------------
+
+
+--- STAGE 3: ablation significance (long references) ---
+task length generator               pair  mean_diff   ci_lo  ci_hi seeds_significant run_timestamp
+ OS3   long       GPT   bertscore-cosine     0.2848  0.0841 0.4736               4/5 20261021_1624
+ OS3   long       GPT combined-bertscore    -0.0399 -0.1129 0.0228               1/5 20261021_1624
+ OS3   long       GPT    combined-cosine     0.2415  0.0588 0.4167               3/5 20261021_1624
+ OS3   long    Claude   bertscore-cosine     0.2671  0.0340 0.4890               2/5 20261021_1624
+ OS3   long    Claude combined-bertscore    -0.0234 -0.0549 0.0032               1/5 20261021_1624
+ OS3   long    Claude    combined-cosine     0.2479  0.0176 0.4605               1/5 20261021_1624
+ OS3   long    Gemini   bertscore-cosine     0.2976  0.0505 0.5249               2/5 20261021_1624
+ OS3   long    Gemini combined-bertscore    -0.0075 -0.0242 0.0029               0/5 20261021_1624
+ OS3   long    Gemini    combined-cosine     0.2893  0.0501 0.5078               2/5 20261021_1624
+
+DONE OS3 [20261021_1624]:
+ - <WORKSPACE_ROOT>/_multiseed_results_fold_safe/OS3_raw_fold_safe_20261021_1624.csv
+ - <WORKSPACE_ROOT>/_multiseed_results_fold_safe/OS3_predictions_fold_safe_20261021_1624.csv
+ - <WORKSPACE_ROOT>/_multiseed_results_fold_safe/OS3_summary_fold_safe_20261021_1624.csv
+ - <WORKSPACE_ROOT>/_multiseed_results_fold_safe/OS3_significance_fold_safe_20261021_1624.csv
+ - <WORKSPACE_ROOT>/_multiseed_results_fold_safe/OS3_ablation_fold_safe_20261021_1624.csv

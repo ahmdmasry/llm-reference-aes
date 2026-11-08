@@ -1,0 +1,258 @@
+ Mounted at <DRIVE_MOUNT>
+Loading encoders ...
+modules.json: 100% 349/349 [00:00<00:00, 36.5kB/s]config_sentence_transformers.json: 100% 116/116 [00:00<00:00, 13.3kB/s]README.md: 100% 11.6k/11.6k [00:00<00:00, 1.01MB/s]sentence_bert_config.json: 100% 53.0/53.0 [00:00<00:00, 4.79kB/s]config.json: 100% 571/571 [00:00<00:00, 66.2kB/s]model.safetensors: reconstructing file: 100%  438MB /  438MB, 34.2MB/s  model.safetensors: downloading bytes:   414MB, 36.5MB/s  Loading weights: 100% 199/199 [00:00<00:00, 3029.92it/s]tokenizer_config.json: 100% 363/363 [00:00<00:00, 37.5kB/s]vocab.txt: 100% 232k/232k [00:00<00:00, 8.27MB/s]tokenizer.json: 100% 466k/466k [00:00<00:00, 19.7MB/s]special_tokens_map.json: 100% 239/239 [00:00<00:00, 21.9kB/s]config.json: 100% 190/190 [00:00<00:00, 18.2kB/s]config.json: 100% 482/482 [00:00<00:00, 47.8kB/s]model.safetensors: reconstructing file: 100% 1.42GB / 1.42GB, 94.1MB/s  model.safetensors: downloading bytes:   952MB, 70.6MB/s  Loading weights: 100% 389/389 [00:00<00:00, 3758.69it/s][transformers] RobertaModel LOAD REPORT from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Calibrating RoBERTa tokenization against the stored features ...
+tokenizer_config.json: 100% 25.0/25.0 [00:00<00:00, 2.46kB/s]vocab.json: 100% 899k/899k [00:00<00:00, 1.76MB/s]merges.txt: 100% 456k/456k [00:00<00:00, 924kB/s]tokenizer.json: 100% 1.36M/1.36M [00:00<00:00, 2.08MB/s][transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (700 > 512). Running this sequence through the model will result in indexing errors
+  add_prefix_space=False: max |difference| = 2.14e-07 over 150 essays
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (700 > 512). Running this sequence through the model will result in indexing errors
+  add_prefix_space=True: max |difference| = 5.39e-03 over 150 essays
+Using add_prefix_space=False
+SBERT window 382, BERTScore window 510, overlaps 128/128
+
+=== ASAP1 ===
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (438 > 384). Running this sequence through the model will result in indexing errors
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (825 > 512). Running this sequence through the model will result in indexing errors
+  ASAP1: 128/1783 essays (0.3 min)
+  ASAP1: 256/1783 essays (0.6 min)
+  ASAP1: 384/1783 essays (0.9 min)
+  ASAP1: 512/1783 essays (1.2 min)
+  ASAP1: 640/1783 essays (1.4 min)
+  ASAP1: 768/1783 essays (1.7 min)
+  ASAP1: 896/1783 essays (2.0 min)
+  ASAP1: 1024/1783 essays (2.2 min)
+  ASAP1: 1152/1783 essays (2.5 min)
+  ASAP1: 1280/1783 essays (2.8 min)
+  ASAP1: 1408/1783 essays (3.1 min)
+  ASAP1: 1536/1783 essays (3.3 min)
+  ASAP1: 1664/1783 essays (3.6 min)
+  ASAP1: 1783/1783 essays (3.8 min)
+  Equivalence check: max |difference| = 4.21e-06 over 21 feature sets
+  Scoring complete for ASAP1
+
+=== ASAP2 ===
+  ASAP2: 128/1800 essays (0.4 min)
+  ASAP2: 256/1800 essays (0.7 min)
+  ASAP2: 384/1800 essays (1.0 min)
+  ASAP2: 512/1800 essays (1.3 min)
+  ASAP2: 640/1800 essays (1.6 min)
+  ASAP2: 768/1800 essays (1.8 min)
+  ASAP2: 896/1800 essays (2.1 min)
+  ASAP2: 1024/1800 essays (2.4 min)
+  ASAP2: 1152/1800 essays (2.7 min)
+  ASAP2: 1280/1800 essays (3.0 min)
+  ASAP2: 1408/1800 essays (3.3 min)
+  ASAP2: 1536/1800 essays (3.6 min)
+  ASAP2: 1664/1800 essays (3.9 min)
+  ASAP2: 1792/1800 essays (4.2 min)
+  ASAP2: 1800/1800 essays (4.2 min)
+  Equivalence check: max |difference| = 5.26e-06 over 12 feature sets
+  Scoring complete for ASAP2
+
+=== ASAP3 ===
+  ASAP3: 128/1726 essays (0.1 min)
+  ASAP3: 256/1726 essays (0.2 min)
+  ASAP3: 384/1726 essays (0.3 min)
+  ASAP3: 512/1726 essays (0.4 min)
+  ASAP3: 640/1726 essays (0.5 min)
+  ASAP3: 768/1726 essays (0.6 min)
+  ASAP3: 896/1726 essays (0.6 min)
+  ASAP3: 1024/1726 essays (0.7 min)
+  ASAP3: 1152/1726 essays (0.8 min)
+  ASAP3: 1280/1726 essays (0.9 min)
+  ASAP3: 1408/1726 essays (1.0 min)
+  ASAP3: 1536/1726 essays (1.1 min)
+  ASAP3: 1664/1726 essays (1.2 min)
+  ASAP3: 1726/1726 essays (1.2 min)
+  Equivalence check: max |difference| = 5.87e-06 over 31 feature sets
+  Scoring complete for ASAP3
+
+=== ASAP4 ===
+  ASAP4: 128/1771 essays (0.1 min)
+  ASAP4: 256/1771 essays (0.2 min)
+  ASAP4: 384/1771 essays (0.3 min)
+  ASAP4: 512/1771 essays (0.4 min)
+  ASAP4: 640/1771 essays (0.4 min)
+  ASAP4: 768/1771 essays (0.5 min)
+  ASAP4: 896/1771 essays (0.6 min)
+  ASAP4: 1024/1771 essays (0.7 min)
+  ASAP4: 1152/1771 essays (0.7 min)
+  ASAP4: 1280/1771 essays (0.8 min)
+  ASAP4: 1408/1771 essays (0.9 min)
+  ASAP4: 1536/1771 essays (1.0 min)
+  ASAP4: 1664/1771 essays (1.1 min)
+  ASAP4: 1771/1771 essays (1.1 min)
+  Equivalence check: max |difference| = 1.67e-06 over 34 feature sets
+  Scoring complete for ASAP4
+
+=== ASAP5 ===
+  ASAP5: 128/1805 essays (0.1 min)
+  ASAP5: 256/1805 essays (0.2 min)
+  ASAP5: 384/1805 essays (0.3 min)
+  ASAP5: 512/1805 essays (0.4 min)
+  ASAP5: 640/1805 essays (0.5 min)
+  ASAP5: 768/1805 essays (0.6 min)
+  ASAP5: 896/1805 essays (0.7 min)
+  ASAP5: 1024/1805 essays (0.8 min)
+  ASAP5: 1152/1805 essays (0.9 min)
+  ASAP5: 1280/1805 essays (1.0 min)
+  ASAP5: 1408/1805 essays (1.1 min)
+  ASAP5: 1536/1805 essays (1.2 min)
+  ASAP5: 1664/1805 essays (1.3 min)
+  ASAP5: 1792/1805 essays (1.4 min)
+  ASAP5: 1805/1805 essays (1.4 min)
+  Equivalence check: max |difference| = 3.81e-06 over 34 feature sets
+  Scoring complete for ASAP5
+
+=== ASAP6 ===
+  ASAP6: 128/1800 essays (0.2 min)
+  ASAP6: 256/1800 essays (0.3 min)
+  ASAP6: 384/1800 essays (0.4 min)
+  ASAP6: 512/1800 essays (0.5 min)
+  ASAP6: 640/1800 essays (0.6 min)
+  ASAP6: 768/1800 essays (0.8 min)
+  ASAP6: 896/1800 essays (0.9 min)
+  ASAP6: 1024/1800 essays (1.0 min)
+  ASAP6: 1152/1800 essays (1.1 min)
+  ASAP6: 1280/1800 essays (1.2 min)
+  ASAP6: 1408/1800 essays (1.3 min)
+  ASAP6: 1536/1800 essays (1.4 min)
+  ASAP6: 1664/1800 essays (1.5 min)
+  ASAP6: 1792/1800 essays (1.7 min)
+  ASAP6: 1800/1800 essays (1.7 min)
+  Equivalence check: max |difference| = 3.92e-06 over 27 feature sets
+  Scoring complete for ASAP6
+
+=== ASAP7 ===
+  ASAP7: 128/1569 essays (0.2 min)
+  ASAP7: 256/1569 essays (0.4 min)
+  ASAP7: 384/1569 essays (0.5 min)
+  ASAP7: 512/1569 essays (0.6 min)
+  ASAP7: 640/1569 essays (0.8 min)
+  ASAP7: 768/1569 essays (0.9 min)
+  ASAP7: 896/1569 essays (1.0 min)
+  ASAP7: 1024/1569 essays (1.2 min)
+  ASAP7: 1152/1569 essays (1.3 min)
+  ASAP7: 1280/1569 essays (1.4 min)
+  ASAP7: 1408/1569 essays (1.5 min)
+  ASAP7: 1536/1569 essays (1.7 min)
+  ASAP7: 1569/1569 essays (1.7 min)
+  Equivalence check: max |difference| = 5.49e-06 over 20 feature sets
+  Scoring complete for ASAP7
+
+=== ASAP8 ===
+  ASAP8: 128/723 essays (0.6 min)
+  ASAP8: 256/723 essays (1.1 min)
+  ASAP8: 384/723 essays (1.6 min)
+  ASAP8: 512/723 essays (2.1 min)
+  ASAP8: 640/723 essays (2.5 min)
+  ASAP8: 723/723 essays (2.8 min)
+  Equivalence check: max |difference| = 4.05e-06 over 12 feature sets
+  Scoring complete for ASAP8
+
+Truncation extent:
+ task  n_responses  responses_over_sbert_pct  responses_over_roberta_pct  references_over_sbert_pct  references_over_roberta_pct  max_sbert_windows  max_roberta_windows
+ASAP1         1783                      65.3                        30.5                       57.8                         33.3                  5                    3
+ASAP2         1800                      61.1                        36.4                       66.7                         44.4                  5                    4
+ASAP3         1726                       0.1                         0.0                       17.8                          2.2                  2                    2
+ASAP4         1771                       0.1                         0.0                       20.0                          0.0                  2                    1
+ASAP5         1805                       0.2                         0.2                       17.8                          0.0                  2                    2
+ASAP6         1800                       0.8                         0.1                       28.9                         20.0                  2                    2
+ASAP7         1569                       6.9                         2.8                       44.4                         35.6                  3                    3
+ASAP8          723                      88.0                        78.6                       66.7                         66.7                  5                    4
+
+Equivalence check (worst per task):
+task
+ASAP1    4.21e-06
+ASAP2    5.26e-06
+ASAP3    5.87e-06
+ASAP4    1.67e-06
+ASAP5    3.81e-06
+ASAP6    3.92e-06
+ASAP7    5.49e-06
+ASAP8    4.05e-06
+
+Reproduction of Table 4 (direct truncation), mean |difference| per task:
+task
+ASAP1    0.0002
+ASAP2    0.0003
+ASAP3    0.0003
+ASAP4    0.0003
+ASAP5    0.0002
+ASAP6    0.0003
+ASAP7    0.0003
+ASAP8    0.0002
+
+Sliding window minus direct truncation (QWK):
+     task length  n_pairs  direct_qwk  sliding_qwk  delta_mean  delta_sd  wilcoxon_stat  p_value
+    ASAP1   long       15       0.719        0.755       0.036     0.010            0.0    0.000
+    ASAP1 medium       15       0.667        0.720       0.054     0.018            0.0    0.000
+    ASAP1  short       15       0.563        0.643       0.079     0.020            0.0    0.000
+    ASAP2   long       15       0.706        0.744       0.038     0.020            0.0    0.000
+    ASAP2 medium       15       0.686        0.733       0.047     0.019            0.0    0.000
+    ASAP2  short       15       0.528        0.633       0.105     0.019            0.0    0.000
+    ASAP3   long       15       0.578        0.578      -0.000     0.005           18.0    0.594
+    ASAP3 medium       15       0.558        0.558       0.000     0.000            NaN      NaN
+    ASAP3  short       15       0.505        0.505       0.000     0.000            NaN      NaN
+    ASAP4   long       15       0.696        0.696       0.001     0.005           30.0    0.790
+    ASAP4 medium       15       0.679        0.678      -0.000     0.001            0.0    0.317
+    ASAP4  short       15       0.641        0.641       0.000     0.001            0.0    0.317
+    ASAP5   long       15       0.748        0.748      -0.000     0.003           19.0    0.678
+    ASAP5 medium       15       0.747        0.748       0.001     0.003            5.0    0.249
+    ASAP5  short       15       0.711        0.712       0.000     0.002           23.0    0.646
+    ASAP6   long       15       0.767        0.766      -0.001     0.005           50.0    0.599
+    ASAP6 medium       15       0.774        0.774      -0.000     0.001            3.0    1.000
+    ASAP6  short       15       0.751        0.752       0.001     0.002            8.0    0.161
+    ASAP7   long       15       0.691        0.681      -0.010     0.010            3.0    0.000
+    ASAP7 medium       15       0.663        0.668       0.006     0.005            6.0    0.001
+    ASAP7  short       15       0.560        0.567       0.007     0.007           11.0    0.003
+    ASAP8   long       15       0.605        0.705       0.099     0.013            0.0    0.000
+    ASAP8 medium       15       0.566        0.700       0.134     0.015            0.0    0.000
+    ASAP8  short       15       0.326        0.580       0.254     0.033            0.0    0.000
+all tasks   long      120       0.689        0.709       0.020     0.036         1242.0    0.000
+all tasks medium      120       0.667        0.697       0.030     0.046           48.0    0.000
+all tasks  short      120       0.573        0.629       0.056     0.086           80.0    0.000
+
+Length effect under each method:
+     task           contrast  n_pairs  gap_direct  p_gap_direct  gap_sliding  p_gap_sliding  change_mean  change_sd  p_change  share_of_gap_retained
+    ASAP1  long_minus_medium       15       0.053         0.000        0.035          0.000       -0.018      0.014     0.000                  0.659
+    ASAP1   long_minus_short       15       0.156         0.000        0.112          0.000       -0.044      0.020     0.000                  0.720
+    ASAP1 medium_minus_short       15       0.103         0.000        0.078          0.000       -0.026      0.017     0.000                  0.751
+    ASAP2  long_minus_medium       15       0.020         0.002        0.011          0.007       -0.009      0.017     0.064                  0.564
+    ASAP2   long_minus_short       15       0.178         0.000        0.111          0.000       -0.067      0.026     0.000                  0.625
+    ASAP2 medium_minus_short       15       0.158         0.000        0.100          0.000       -0.058      0.024     0.000                  0.633
+    ASAP3  long_minus_medium       15       0.020         0.000        0.020          0.001       -0.000      0.005     0.594                  0.976
+    ASAP3   long_minus_short       15       0.074         0.000        0.073          0.000       -0.000      0.005     0.594                  0.993
+    ASAP3 medium_minus_short       15       0.054         0.000        0.054          0.000        0.000      0.000       NaN                  1.000
+    ASAP4  long_minus_medium       15       0.017         0.000        0.018          0.000        0.001      0.005     0.790                  1.048
+    ASAP4   long_minus_short       15       0.055         0.000        0.055          0.000        0.000      0.004     0.790                  1.007
+    ASAP4 medium_minus_short       15       0.038         0.000        0.038          0.000       -0.000      0.002     0.317                  0.989
+    ASAP5  long_minus_medium       15       0.001         0.524        0.001          0.639       -0.001      0.003     0.477                  0.572
+    ASAP5   long_minus_short       15       0.037         0.000        0.037          0.000       -0.000      0.004     0.433                  0.987
+    ASAP5 medium_minus_short       15       0.036         0.000        0.036          0.000        0.000      0.003     0.594                  1.004
+    ASAP6  long_minus_medium       15      -0.007         0.041       -0.008          0.074       -0.001      0.006     0.720                  1.119
+    ASAP6   long_minus_short       15       0.015         0.007        0.014          0.008       -0.002      0.005     0.208                  0.887
+    ASAP6 medium_minus_short       15       0.023         0.000        0.022          0.000       -0.001      0.003     0.074                  0.961
+    ASAP7  long_minus_medium       15       0.029         0.000        0.013          0.135       -0.016      0.007     0.000                  0.450
+    ASAP7   long_minus_short       15       0.132         0.000        0.114          0.000       -0.018      0.011     0.000                  0.866
+    ASAP7 medium_minus_short       15       0.103         0.000        0.101          0.000       -0.002      0.008     0.489                  0.982
+    ASAP8  long_minus_medium       15       0.039         0.000        0.005          0.064       -0.034      0.015     0.000                  0.122
+    ASAP8   long_minus_short       15       0.279         0.000        0.125          0.000       -0.155      0.031     0.000                  0.447
+    ASAP8 medium_minus_short       15       0.240         0.000        0.120          0.000       -0.120      0.030     0.000                  0.500
+all tasks  long_minus_medium      120       0.022         0.000        0.012          0.000       -0.010      0.015     0.000                  0.546
+all tasks   long_minus_short      120       0.116         0.000        0.080          0.000       -0.036      0.053     0.000                  0.692
+all tasks medium_minus_short      120       0.094         0.000        0.068          0.000       -0.026      0.043     0.000                  0.726
+
+All outputs saved to: <WORKSPACE_ROOT>/Tokenizer Results/truncation_sensitivity/20261028_171122_UTC

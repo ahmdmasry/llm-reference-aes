@@ -1,0 +1,10 @@
+task,length,generator,pair,mean_diff,ci_lo,ci_hi,seeds_significant,run_timestamp
+OS3,long,GPT,bertscore-cosine,0.2848,0.0841,0.4736,4/5,20261021_1624
+OS3,long,GPT,combined-bertscore,-0.0399,-0.1129,0.0228,1/5,20261021_1624
+OS3,long,GPT,combined-cosine,0.2415,0.0588,0.4167,3/5,20261021_1624
+OS3,long,Claude,bertscore-cosine,0.2671,0.034,0.489,2/5,20261021_1624
+OS3,long,Claude,combined-bertscore,-0.0234,-0.0549,0.0032,1/5,20261021_1624
+OS3,long,Claude,combined-cosine,0.2479,0.0176,0.4605,1/5,20261021_1624
+OS3,long,Gemini,bertscore-cosine,0.2976,0.0505,0.5249,2/5,20261021_1624
+OS3,long,Gemini,combined-bertscore,-0.0075,-0.0242,0.0029,0/5,20261021_1624
+OS3,long,Gemini,combined-cosine,0.2893,0.0501,0.5078,2/5,20261021_1624

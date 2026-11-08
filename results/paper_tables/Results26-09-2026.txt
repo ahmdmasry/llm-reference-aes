@@ -1,0 +1,306 @@
+Google Drive is not mounted; mounting <DRIVE_MOUNT>...
+Mounted at <DRIVE_MOUNT>
+AES root:     <WORKSPACE_ROOT>
+Results:      <WORKSPACE_ROOT>/_multiseed_results_fold_safe
+Tasks:        ASAP1, ASAP2, ASAP3, ASAP4, ASAP5, ASAP6, ASAP7, ASAP8, OS1, OS2, OS3, OS4, OS5
+Seeds:        [42, 43, 44, 45, 46]
+Ridge alphas: [0.1, 0.3, 1.0, 3.0, 10.0, 30.0]
+Bootstrap:    1000 resamples
+Scaling:      StandardScaler inside every CV fold
+Run stamp:    20260925_1756
+
+=== ASAP1 (score range 2-12) ===
+  Loaded GPT    /short : 1783 responses  (features_full_short_ASAP1_GPT.csv)
+  Loaded GPT    /medium: 1783 responses  (features_full_medium_ASAP1_GPT.csv)
+  Loaded GPT    /long  : 1783 responses  (features_full_long_ASAP1_GPT.csv)
+  Loaded Gemini /short : 1783 responses  (features_full_short_ASAP1_Gemini.csv)
+  Loaded Gemini /medium: 1783 responses  (features_full_medium_ASAP1_Gemini.csv)
+  Loaded Gemini /long  : 1783 responses  (features_full_long_ASAP1_Gemini.csv)
+  Loaded Claude /short : 1783 responses  (features_full_short_ASAP1_Claude.csv)
+  Loaded Claude /medium: 1783 responses  (features_full_medium_ASAP1_Claude.csv)
+  Loaded Claude /long  : 1783 responses  (features_full_long_ASAP1_Claude.csv)
+  Validated 9 files. Official range 2-12; observed scores 2-12 (11 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.5849
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.6783
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.7119
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.5471
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.6371
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.7087
+  Claude  short : combined QWK (mean of 5 seeds) = 0.5577
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.6846
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.7373
+
+=== ASAP2 (score range 2-10) ===
+  Loaded GPT    /short : 1800 responses  (features_full_short_ASAP2_GPT.csv)
+  Loaded GPT    /medium: 1800 responses  (features_full_medium_ASAP2_GPT.csv)
+  Loaded GPT    /long  : 1800 responses  (features_full_long_ASAP2_GPT.csv)
+  Loaded Gemini /short : 1800 responses  (features_full_short_ASAP2_Gemini.csv)
+  Loaded Gemini /medium: 1800 responses  (features_full_medium_ASAP2_Gemini.csv)
+  Loaded Gemini /long  : 1800 responses  (features_full_long_ASAP2_Gemini.csv)
+  Loaded Claude /short : 1800 responses  (features_full_short_ASAP2_Claude.csv)
+  Loaded Claude /medium: 1800 responses  (features_full_medium_ASAP2_Claude.csv)
+  Loaded Claude /long  : 1800 responses  (features_full_long_ASAP2_Claude.csv)
+  Validated 9 files. Official range 2-10; observed scores 2-10 (9 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.5660
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.6840
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.7211
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.5032
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.6679
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.6691
+  Claude  short : combined QWK (mean of 5 seeds) = 0.5154
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.7061
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.7287
+
+=== ASAP3 (score range 0-3) ===
+  Loaded GPT    /short : 1726 responses  (features_full_short_ASAP3_GPT.csv)
+  Loaded GPT    /medium: 1726 responses  (features_full_medium_ASAP3_GPT.csv)
+  Loaded GPT    /long  : 1726 responses  (features_full_long_ASAP3_GPT.csv)
+  Loaded Gemini /short : 1726 responses  (features_full_short_ASAP3_Gemini.csv)
+  Loaded Gemini /medium: 1726 responses  (features_full_medium_ASAP3_Gemini.csv)
+  Loaded Gemini /long  : 1726 responses  (features_full_long_ASAP3_Gemini.csv)
+  Loaded Claude /short : 1726 responses  (features_full_short_ASAP3_Claude.csv)
+  Loaded Claude /medium: 1726 responses  (features_full_medium_ASAP3_Claude.csv)
+  Loaded Claude /long  : 1726 responses  (features_full_long_ASAP3_Claude.csv)
+  Validated 9 files. Official range 0-3; observed scores 0-3 (4 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.5279
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.5496
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.5735
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.4806
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.5627
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.5856
+  Claude  short : combined QWK (mean of 5 seeds) = 0.5056
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.5611
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.5763
+
+=== ASAP4 (score range 0-3) ===
+  Loaded GPT    /short : 1771 responses  (features_full_short_ASAP4_GPT.csv)
+  Loaded GPT    /medium: 1771 responses  (features_full_medium_ASAP4_GPT.csv)
+  Loaded GPT    /long  : 1771 responses  (features_full_long_ASAP4_GPT.csv)
+  Loaded Gemini /short : 1771 responses  (features_full_short_ASAP4_Gemini.csv)
+  Loaded Gemini /medium: 1771 responses  (features_full_medium_ASAP4_Gemini.csv)
+  Loaded Gemini /long  : 1771 responses  (features_full_long_ASAP4_Gemini.csv)
+  Loaded Claude /short : 1771 responses  (features_full_short_ASAP4_Claude.csv)
+  Loaded Claude /medium: 1771 responses  (features_full_medium_ASAP4_Claude.csv)
+  Loaded Claude /long  : 1771 responses  (features_full_long_ASAP4_Claude.csv)
+  Validated 9 files. Official range 0-3; observed scores 0-3 (4 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.6687
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.6938
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.7061
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.6213
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.6727
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.6944
+  Claude  short : combined QWK (mean of 5 seeds) = 0.6315
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.6702
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.6858
+
+=== ASAP5 (score range 0-4) ===
+  Loaded GPT    /short : 1805 responses  (features_full_short_ASAP5_GPT.csv)
+  Loaded GPT    /medium: 1805 responses  (features_full_medium_ASAP5_GPT.csv)
+  Loaded GPT    /long  : 1805 responses  (features_full_long_ASAP5_GPT.csv)
+  Loaded Gemini /short : 1805 responses  (features_full_short_ASAP5_Gemini.csv)
+  Loaded Gemini /medium: 1805 responses  (features_full_medium_ASAP5_Gemini.csv)
+  Loaded Gemini /long  : 1805 responses  (features_full_long_ASAP5_Gemini.csv)
+  Loaded Claude /short : 1805 responses  (features_full_short_ASAP5_Claude.csv)
+  Loaded Claude /medium: 1805 responses  (features_full_medium_ASAP5_Claude.csv)
+  Loaded Claude /long  : 1805 responses  (features_full_long_ASAP5_Claude.csv)
+  Validated 9 files. Official range 0-4; observed scores 0-4 (5 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.7268
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.7617
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.7629
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.7014
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.7285
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.7383
+  Claude  short : combined QWK (mean of 5 seeds) = 0.7073
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.7505
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.7451
+
+=== ASAP6 (score range 0-4) ===
+  Loaded GPT    /short : 1800 responses  (features_full_short_ASAP6_GPT.csv)
+  Loaded GPT    /medium: 1800 responses  (features_full_medium_ASAP6_GPT.csv)
+  Loaded GPT    /long  : 1800 responses  (features_full_long_ASAP6_GPT.csv)
+  Loaded Gemini /short : 1800 responses  (features_full_short_ASAP6_Gemini.csv)
+  Loaded Gemini /medium: 1800 responses  (features_full_medium_ASAP6_Gemini.csv)
+  Loaded Gemini /long  : 1800 responses  (features_full_long_ASAP6_Gemini.csv)
+  Loaded Claude /short : 1800 responses  (features_full_short_ASAP6_Claude.csv)
+  Loaded Claude /medium: 1800 responses  (features_full_medium_ASAP6_Claude.csv)
+  Loaded Claude /long  : 1800 responses  (features_full_long_ASAP6_Claude.csv)
+  Validated 9 files. Official range 0-4; observed scores 0-4 (5 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.7535
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.7857
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.7781
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.7623
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.7844
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.7792
+  Claude  short : combined QWK (mean of 5 seeds) = 0.7381
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.7529
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.7435
+
+=== ASAP7 (score range 0-30) ===
+  Loaded GPT    /short : 1569 responses  (features_full_short_ASAP7_GPT.csv)
+  Loaded GPT    /medium: 1569 responses  (features_full_medium_ASAP7_GPT.csv)
+  Loaded GPT    /long  : 1569 responses  (features_full_long_ASAP7_GPT.csv)
+  Loaded Gemini /short : 1569 responses  (features_full_short_ASAP7_Gemini.csv)
+  Loaded Gemini /medium: 1569 responses  (features_full_medium_ASAP7_Gemini.csv)
+  Loaded Gemini /long  : 1569 responses  (features_full_long_ASAP7_Gemini.csv)
+  Loaded Claude /short : 1569 responses  (features_full_short_ASAP7_Claude.csv)
+  Loaded Claude /medium: 1569 responses  (features_full_medium_ASAP7_Claude.csv)
+  Loaded Claude /long  : 1569 responses  (features_full_long_ASAP7_Claude.csv)
+  Validated 9 files. Official range 0-30; observed scores 2-24 (23 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.6125
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.7326
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.7376
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.4699
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.5841
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.6357
+  Claude  short : combined QWK (mean of 5 seeds) = 0.5965
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.6714
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.7002
+
+=== ASAP8 (score range 0-60) ===
+  Loaded GPT    /short :  723 responses  (features_full_short_ASAP8_GPT.csv)
+  Loaded GPT    /medium:  723 responses  (features_full_medium_ASAP8_GPT.csv)
+  Loaded GPT    /long  :  723 responses  (features_full_long_ASAP8_GPT.csv)
+  Loaded Gemini /short :  723 responses  (features_full_short_ASAP8_Gemini.csv)
+  Loaded Gemini /medium:  723 responses  (features_full_medium_ASAP8_Gemini.csv)
+  Loaded Gemini /long  :  723 responses  (features_full_long_ASAP8_Gemini.csv)
+  Loaded Claude /short :  723 responses  (features_full_short_ASAP8_Claude.csv)
+  Loaded Claude /medium:  723 responses  (features_full_medium_ASAP8_Claude.csv)
+  Loaded Claude /long  :  723 responses  (features_full_long_ASAP8_Claude.csv)
+  Validated 9 files. Official range 0-60; observed scores 10-60 (34 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.2764
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.5567
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.5970
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.3673
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.5776
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.6245
+  Claude  short : combined QWK (mean of 5 seeds) = 0.3368
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.5641
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.5939
+
+=== OS1 (score range 0-5) ===
+  Loaded GPT    /short :  291 responses  (features_full_short_OS1_GPT.csv)
+  Loaded GPT    /medium:  291 responses  (features_full_medium_OS1_GPT.csv)
+  Loaded GPT    /long  :  291 responses  (features_full_long_OS1_GPT.csv)
+  Loaded Gemini /short :  291 responses  (features_full_short_OS1_Gemini.csv)
+  Loaded Gemini /medium:  291 responses  (features_full_medium_OS1_Gemini.csv)
+  Loaded Gemini /long  :  291 responses  (features_full_long_OS1_Gemini.csv)
+  Loaded Claude /short :  291 responses  (features_full_short_OS1_Claude.csv)
+  Loaded Claude /medium:  291 responses  (features_full_medium_OS1_Claude.csv)
+  Loaded Claude /long  :  291 responses  (features_full_long_OS1_Claude.csv)
+  Validated 9 files. Official range 0-5; observed scores 0-5 (6 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.7099
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.7270
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.7443
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.7184
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.7256
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.7149
+  Claude  short : combined QWK (mean of 5 seeds) = 0.6921
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.7204
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.7183
+
+=== OS2 (score range 0-5) ===
+  Loaded GPT    /short :  372 responses  (features_full_short_OS2_GPT.csv)
+  Loaded GPT    /medium:  372 responses  (features_full_medium_OS2_GPT.csv)
+  Loaded GPT    /long  :  372 responses  (features_full_long_OS2_GPT.csv)
+  Loaded Gemini /short :  372 responses  (features_full_short_OS2_Gemini.csv)
+  Loaded Gemini /medium:  372 responses  (features_full_medium_OS2_Gemini.csv)
+  Loaded Gemini /long  :  372 responses  (features_full_long_OS2_Gemini.csv)
+  Loaded Claude /short :  372 responses  (features_full_short_OS2_Claude.csv)
+  Loaded Claude /medium:  372 responses  (features_full_medium_OS2_Claude.csv)
+  Loaded Claude /long  :  372 responses  (features_full_long_OS2_Claude.csv)
+  Validated 9 files. Official range 0-5; observed scores 0-5 (6 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.6238
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.6067
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.5834
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.6732
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.6520
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.6381
+  Claude  short : combined QWK (mean of 5 seeds) = 0.6310
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.6184
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.6302
+
+=== OS3 (score range 0-5) ===
+  Loaded GPT    /short :  312 responses  (features_full_short_OS3_GPT.csv)
+  Loaded GPT    /medium:  312 responses  (features_full_medium_OS3_GPT.csv)
+  Loaded GPT    /long  :  312 responses  (features_full_long_OS3_GPT.csv)
+  Loaded Gemini /short :  312 responses  (features_full_short_OS3_Gemini.csv)
+  Loaded Gemini /medium:  312 responses  (features_full_medium_OS3_Gemini.csv)
+  Loaded Gemini /long  :  312 responses  (features_full_long_OS3_Gemini.csv)
+  Loaded Claude /short :  312 responses  (features_full_short_OS3_Claude.csv)
+  Loaded Claude /medium:  312 responses  (features_full_medium_OS3_Claude.csv)
+  Loaded Claude /long  :  312 responses  (features_full_long_OS3_Claude.csv)
+  Validated 9 files. Official range 0-5; observed scores 0-5 (6 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.6405
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.6400
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.5898
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.4769
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.4899
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.4631
+  Claude  short : combined QWK (mean of 5 seeds) = 0.5773
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.5736
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.5739
+
+=== OS4 (score range 0-5) ===
+  Loaded GPT    /short :  314 responses  (features_full_short_OS4_GPT.csv)
+  Loaded GPT    /medium:  314 responses  (features_full_medium_OS4_GPT.csv)
+  Loaded GPT    /long  :  314 responses  (features_full_long_OS4_GPT.csv)
+  Loaded Gemini /short :  314 responses  (features_full_short_OS4_Gemini.csv)
+  Loaded Gemini /medium:  314 responses  (features_full_medium_OS4_Gemini.csv)
+  Loaded Gemini /long  :  314 responses  (features_full_long_OS4_Gemini.csv)
+  Loaded Claude /short :  314 responses  (features_full_short_OS4_Claude.csv)
+  Loaded Claude /medium:  314 responses  (features_full_medium_OS4_Claude.csv)
+  Loaded Claude /long  :  314 responses  (features_full_long_OS4_Claude.csv)
+  Validated 9 files. Official range 0-5; observed scores 0-3 (4 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.6220
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.6035
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.6089
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.5845
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.5698
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.6068
+  Claude  short : combined QWK (mean of 5 seeds) = 0.6065
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.6001
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.5924
+
+=== OS5 (score range 0-5) ===
+  Loaded GPT    /short :  267 responses  (features_full_short_OS5_GPT.csv)
+  Loaded GPT    /medium:  267 responses  (features_full_medium_OS5_GPT.csv)
+  Loaded GPT    /long  :  267 responses  (features_full_long_OS5_GPT.csv)
+  Loaded Gemini /short :  267 responses  (features_full_short_OS5_Gemini.csv)
+  Loaded Gemini /medium:  267 responses  (features_full_medium_OS5_Gemini.csv)
+  Loaded Gemini /long  :  267 responses  (features_full_long_OS5_Gemini.csv)
+  Loaded Claude /short :  267 responses  (features_full_short_OS5_Claude.csv)
+  Loaded Claude /medium:  267 responses  (features_full_medium_OS5_Claude.csv)
+  Loaded Claude /long  :  267 responses  (features_full_long_OS5_Claude.csv)
+  Validated 9 files. Official range 0-5; observed scores 0-3 (4 distinct).
+  GPT     short : combined QWK (mean of 5 seeds) = 0.6401
+  GPT     medium: combined QWK (mean of 5 seeds) = 0.6325
+  GPT     long  : combined QWK (mean of 5 seeds) = 0.6403
+  Gemini  short : combined QWK (mean of 5 seeds) = 0.6330
+  Gemini  medium: combined QWK (mean of 5 seeds) = 0.6139
+  Gemini  long  : combined QWK (mean of 5 seeds) = 0.6159
+  Claude  short : combined QWK (mean of 5 seeds) = 0.6258
+  Claude  medium: combined QWK (mean of 5 seeds) = 0.6134
+  Claude  long  : combined QWK (mean of 5 seeds) = 0.5862
+
+Combined-feature mean QWK by task:
+generator Claude                  GPT               Gemini              
+length      long medium  short   long medium  short   long medium  short
+task                                                                    
+ASAP1      0.737  0.685  0.558  0.712  0.678  0.585  0.709  0.637  0.547
+ASAP2      0.729  0.706  0.515  0.721  0.684  0.566  0.669  0.668  0.503
+ASAP3      0.576  0.561  0.506  0.574  0.550  0.528  0.586  0.563  0.481
+ASAP4      0.686  0.670  0.632  0.706  0.694  0.669  0.694  0.673  0.621
+ASAP5      0.745  0.750  0.707  0.763  0.762  0.727  0.738  0.728  0.701
+ASAP6      0.744  0.753  0.738  0.778  0.786  0.754  0.779  0.784  0.762
+ASAP7      0.700  0.671  0.596  0.738  0.733  0.612  0.636  0.584  0.470
+ASAP8      0.594  0.564  0.337  0.597  0.557  0.276  0.624  0.578  0.367
+OS1        0.718  0.720  0.692  0.744  0.727  0.710  0.715  0.726  0.718
+OS2        0.630  0.618  0.631  0.583  0.607  0.624  0.638  0.652  0.673
+OS3        0.574  0.574  0.577  0.590  0.640  0.640  0.463  0.490  0.477
+OS4        0.592  0.600  0.606  0.609  0.604  0.622  0.607  0.570  0.584
+OS5        0.586  0.613  0.626  0.640  0.632  0.640  0.616  0.614  0.633
+
+All-task summary: <WORKSPACE_ROOT>/_multiseed_results_fold_safe/ALL_TASKS_summary_fold_safe_20260925_1756.csv
+
+Completed 13/13 tasks: ASAP1, ASAP2, ASAP3, ASAP4, ASAP5, ASAP6, ASAP7, ASAP8, OS1, OS2, OS3, OS4, OS5
+Outputs are in: <WORKSPACE_ROOT>/_multiseed_results_fold_safe

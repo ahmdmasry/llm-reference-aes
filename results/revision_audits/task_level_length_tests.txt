@@ -1,0 +1,68 @@
+Mounted at <DRIVE_MOUNT>
+Task-level QWK means:
+           method  task length      qwk
+direct_truncation ASAP1   long 0.719293
+direct_truncation ASAP1 medium 0.666613
+direct_truncation ASAP1  short 0.563116
+direct_truncation ASAP2   long 0.706335
+direct_truncation ASAP2 medium 0.686027
+direct_truncation ASAP2  short 0.528209
+direct_truncation ASAP3   long 0.578457
+direct_truncation ASAP3 medium 0.558201
+direct_truncation ASAP3  short 0.504673
+direct_truncation ASAP4   long 0.695547
+direct_truncation ASAP4 medium 0.678560
+direct_truncation ASAP4  short 0.640502
+direct_truncation ASAP5   long 0.748358
+direct_truncation ASAP5 medium 0.746900
+direct_truncation ASAP5  short 0.711348
+direct_truncation ASAP6   long 0.766920
+direct_truncation ASAP6 medium 0.774194
+direct_truncation ASAP6  short 0.751492
+direct_truncation ASAP7   long 0.691200
+direct_truncation ASAP7 medium 0.662694
+direct_truncation ASAP7  short 0.559594
+direct_truncation ASAP8   long 0.605145
+direct_truncation ASAP8 medium 0.565977
+direct_truncation ASAP8  short 0.325729
+   sliding_window ASAP1   long 0.754973
+   sliding_window ASAP1 medium 0.720262
+   sliding_window ASAP1  short 0.642535
+   sliding_window ASAP2   long 0.744342
+   sliding_window ASAP2 medium 0.732893
+   sliding_window ASAP2  short 0.633014
+   sliding_window ASAP3   long 0.577974
+   sliding_window ASAP3 medium 0.558201
+   sliding_window ASAP3  short 0.504673
+   sliding_window ASAP4   long 0.696170
+   sliding_window ASAP4 medium 0.678362
+   sliding_window ASAP4  short 0.640718
+   sliding_window ASAP5   long 0.748353
+   sliding_window ASAP5 medium 0.747518
+   sliding_window ASAP5  short 0.711833
+   sliding_window ASAP6   long 0.765955
+   sliding_window ASAP6 medium 0.774091
+   sliding_window ASAP6  short 0.752276
+   sliding_window ASAP7   long 0.681108
+   sliding_window ASAP7 medium 0.668288
+   sliding_window ASAP7  short 0.567072
+   sliding_window ASAP8   long 0.704564
+   sliding_window ASAP8 medium 0.699782
+   sliding_window ASAP8  short 0.579672
+
+Task-level statistical tests:
+           method      comparison  n_tasks  mean_difference  statistic  p_value  p_bonferroni  kendalls_w
+direct_truncation        Friedman        8              NaN      14.25 0.000805           NaN    0.890625
+direct_truncation medium_vs_short        8         0.094313       0.00 0.007812      0.023438         NaN
+direct_truncation   long_vs_short        8         0.115824       0.00 0.007812      0.023438         NaN
+direct_truncation  long_vs_medium        8         0.021511       2.00 0.023438      0.070312         NaN
+   sliding_window        Friedman        8              NaN      14.25 0.000805           NaN    0.890625
+   sliding_window medium_vs_short        8         0.068451       0.00 0.007812      0.023438         NaN
+   sliding_window   long_vs_short        8         0.080206       0.00 0.007812      0.023438         NaN
+   sliding_window  long_vs_medium        8         0.011755       3.00 0.039062      0.117188         NaN
+
+Saved means to:
+<WORKSPACE_ROOT>/Tokenizer Results/truncation_sensitivity/20261028_171122_UTC/task_level_qwk_means.csv
+
+Saved statistical tests to:
+<WORKSPACE_ROOT>/Tokenizer Results/truncation_sensitivity/20261028_171122_UTC/task_level_length_tests.csv
